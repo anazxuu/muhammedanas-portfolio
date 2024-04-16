@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text-typer {
+  color: #fffa;
+  font-size: 3vmax;
+  display: inline-block;
+}
+
+.greeting-container {
+  color: #fff;
+  font-weight: 300;
+  font-size: 10vh;
+}
+
+@media screen and (max-width: 600px) {
+  .greeting-container {
+    color: #fff;
+    font-weight: 300;
+    font-size: 5vh;
+  }
+  .text-typer {
+    color: #fffa;
+    font-size: 30px;
+    display: inline-block;
+  }
+}

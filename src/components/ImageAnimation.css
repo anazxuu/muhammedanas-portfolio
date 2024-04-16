@@ -1,0 +1,62 @@
+.image-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+@keyframes jump {
+  15% {
+    transform: translateY(-20px);
+  }
+  30%,
+  100% {
+    transform: translateY(0px);
+  }
+}
+.computer {
+  width: 70vh;
+  margin: 10px;
+  animation: jump 3s ease infinite;
+}
+.tablet {
+  width: 24vh;
+  margin: 10px;
+  animation: jump 3s ease infinite 1s;
+}
+.smartphone {
+  width: 10vh;
+  margin: 10px;
+  animation: jump 3s ease infinite 2s;
+}
+
+@media screen and (max-width: 850px) {
+  .image-list {
+    display: flex;
+    margin-top: 10vh;
+  }
+  .computer {
+    margin-left: 0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+  .tablet {
+    bottom: -600px;
+    margin-left: -250px;
+    margin-top: 3rem;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 5px 5px 0 0;
+  }
+  .smartphone {
+    margin-left: 10px;
+    margin-top: 9rem;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 5px 5px 0 0;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .image-list {
+    display: flex;
+    margin-top: 10vh;
+  }
+}
